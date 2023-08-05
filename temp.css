@@ -1,0 +1,141 @@
+body {
+  background: linear-gradient(300deg, #f266ab, #1c6dd0, #f266ab);
+  background-size: 180% 180%;
+
+  animation: gradient-animation 18s ease infinite;
+}
+
+.astro {
+  display: inline-block;
+  position: relative;
+  animation-name: astronaut;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+/* @keyframes astronaut {
+}
+ */
+
+@keyframes astronaut {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  5% {
+    left: 25px;
+    top: 10px;
+  }
+  10% {
+    left: 25px;
+    top: 80px;
+  }
+  15% {
+    left: 200px;
+    top: 0px;
+  }
+
+  25% {
+    left: 400px;
+    top: 100px;
+  }
+
+  35% {
+    left: 600px;
+    top: 0px;
+  }
+
+  45% {
+    top: 100px;
+    left: 680px;
+  }
+
+  55% {
+    left: 800px;
+    top: 20px;
+  }
+
+  60% {
+    left: 1100px;
+    top: 0px;
+  }
+
+  65% {
+    left: 1000px;
+    top: 200px;
+  }
+  70% {
+    left: 800px;
+    top: 400px;
+  }
+
+  75% {
+    left: 600px;
+    top: 200px;
+  }
+
+  80% {
+    left: 400px;
+    top: 400px;
+  }
+  90% {
+    left: 200px;
+    top: 400px;
+  }
+  95% {
+    left: 20px;
+    top: 200px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.container {
+  /* float: right; */
+  display: inline-flex;
+  /* align-items: end; */
+
+  gap: 2rem;
+
+  font-size: 1rem;
+
+  margin: 2rem 2rem 0 0;
+  position: relative;
+  bottom: 27rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.heading {
+  color: white;
+  position: relative;
+
+  font-family: "Montserrat", sans-serif;
+
+  bottom: 2rem;
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.heading span {
+  margin-left: 5rem;
+  font-family: "Tektur", cursive;
+  font-size: 6rem;
+}
+
+.navs:hover {
+  background-color: rgba(28, 109, 208, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
